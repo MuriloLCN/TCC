@@ -8,7 +8,7 @@ class Indicadores:
     num_pronomes_demonstrativos: int
     num_enclises: int
     num_erros_gramatica: int
-    num_erros_ortografica: int
+    num_erros_ortografia: int
     num_erros_estilo: int
     num_sentencas_maiores_que_70_chars: int
     num_marcadores_discursivos: int
@@ -17,31 +17,26 @@ class Indicadores:
     tamanho_medio_palavras_silabas: float
     similaridade_com_tema: float
 
-    # Mais alguns indicadores, utilizados por Li et. al
-    """
-    numero de caracteres
-    numero de palavras
-    numero de simbolos de pontuacao
-    numero de substantivos
-    '' verbos
-    '' adverbios
-    '' adjetivos
-    '' conjuncoes
+    # Indicadores Li et al.
 
-    numero de sentencas
-    tamanho medio das sentencas
-    variancia no tamanho das sentencas
+    tamanho_medio_sentencas: float
+    variancia_tamanho_sentencas: float
 
-    numero de palavras do texto que aparecem no prompt
-    """
+    numero_substantivos: int
+    numero_adverbios: int
+    numero_adjetivos: int
+    numero_conjuncoes: int
 
+    # Indicadores propostos
+
+    similaridade_declaracao_direitos_humanos: float
+    similaridade_cap_1_constituicao_88: float
+    
 @dataclass
 class Redacao:
     id_redacao: int
     prompt: str
-    textos_suporte: str
+    texto_suporte: str
     texto_redacao: str
     notas: list[int]
-    ano: int
-    fonte: str
     indicadores_texto: Indicadores

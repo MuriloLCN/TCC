@@ -9,10 +9,10 @@ from pathlib import Path
 
 if __name__ == "__main__":
     pastas = [
-        "JBCS2025",
-        "PROPOR2024",
-        "gradesThousand",
-        "sourceAOnly",
+        # "JBCS2025",
+        # "PROPOR2024",
+        # "gradesThousand",
+        # "sourceAOnly",
         "sourceAWithGraders",
         "sourceB"
     ]
