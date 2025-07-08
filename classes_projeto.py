@@ -15,7 +15,9 @@ class Indicadores:
     num_palavras_diferentes: int
     flesch_score: float
     tamanho_medio_palavras_silabas: float
-    similaridade_com_tema: float
+    similaridade_com_tema_bertimbau: float
+    similaridade_com_tema_albertina: float
+    similaridade_com_tema_bertugues: float
 
     # Indicadores Li et al.
 
@@ -29,8 +31,16 @@ class Indicadores:
 
     # Indicadores propostos
 
-    similaridade_declaracao_direitos_humanos: float
-    similaridade_cap_1_constituicao_88: float
+    similaridade_declaracao_direitos_humanos_bertimbau: float
+    similaridade_declaracao_direitos_humanos_albertina: float
+    similaridade_declaracao_direitos_humanos_bertugues: float
+    
+    similaridade_cap_1_constituicao_88_bertimbau: float
+    similaridade_cap_1_constituicao_88_albertina: float
+    similaridade_cap_1_constituicao_88_bertugues: float
+ 
+    # Auxiliar apenas
+    num_sentencas: int
     
 @dataclass
 class Redacao:
